@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #121212;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.menu h1 {
+    color: #Fefefe;
+    font-size: 2em;
+    margin: 3%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+ul li {
+    list-style: none;
+    color: #Fefefe;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+ul li:hover {
+    cursor: pointer;
+    color: burlywood;
+    transition: all 500ms ease-in-out;
+}
+
+.menu-logo {
+    width: 200px;
+    margin: 2%;
+}
+.menu-logo:hover{
+    cursor: pointer;
+}
+
+.menu-logo img{
+    width: 100%;
+}
+.banner{
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    min-width: 100vw;
+    max-height: 350px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.text-img{
+    display: flex;
+
+}
+.text {
+    max-width: 30%;
+    justify-content: left;
+    align-items: left;
+    margin: 3%;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #Fefefe;
+}
+.side-banner  {
+    min-width: 70%;
+    justify-content: right;
+    align-items: right;
+
+}
+.side-banner img{
+    min-width: 50vw;
+    max-height: 500px;
+    object-fit: fill;
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3%;
+
+}
+.pictures .img {
+    width: 200px;
+    height: 80px;
+    background: black;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.img img:hover{
+    animation: forwards transform ease-in 1s; 
+    cursor: pointer;
+}
+@keyframes transform {
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+footer {
+    text-align: center;
+    margin: 2%;
+    font-size: 1em;
+    color: #Fefefe;
+}
+footer a{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.img.visible{
+    opacity: 1;
+}
